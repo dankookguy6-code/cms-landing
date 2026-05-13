@@ -502,7 +502,7 @@
     padding: 28px;
     border: 1px solid var(--line);
     border-radius: 14px;
-    background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg-1) 100%);
+    background: linear-gradient(180deg, var(--bg) 0%, var(--bg-elev) 100%);
   }
   .aud-stripe-item {
     display: flex; gap: 16px; align-items: flex-start;
@@ -512,15 +512,15 @@
     flex: 0 0 auto;
     width: 36px; height: 36px;
     border-radius: 50%;
-    background: var(--blue);
+    background: var(--accent);
     color: white;
     font-family: var(--mono);
     font-size: 14px; font-weight: 600;
     display: flex; align-items: center; justify-content: center;
   }
   .aud-stripe-body { flex: 1; min-width: 0; }
-  .aud-stripe-title { font-size: 16px; font-weight: 600; color: var(--ink-1); }
-  .aud-stripe-sub { font-size: 13px; color: var(--ink-3); margin-top: 4px; line-height: 1.5; }
+  .aud-stripe-title { font-size: 16px; font-weight: 600; color: var(--ink); word-break: keep-all; }
+  .aud-stripe-sub { font-size: 13px; color: var(--ink-3); margin-top: 4px; line-height: 1.5; word-break: keep-all; overflow-wrap: break-word; }
   @media (max-width: 720px) { .aud-stripe { grid-template-columns: 1fr; } }
 
   /* === Luxury community gallery (deprecated) === */
