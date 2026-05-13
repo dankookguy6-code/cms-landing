@@ -491,6 +491,15 @@
     padding: 5px 9px; border-radius: 999px; font-weight: 600;
   }
   .aud-num { font-family: var(--mono); color: var(--ink-3); font-size: 12px; }
+  .aud-icon {
+    width: 54px; height: 54px; border-radius: 16px;
+    background: color-mix(in oklab, var(--accent) 8%, transparent);
+    display: flex; align-items: center; justify-content: center;
+    margin-top: 20px; color: var(--accent); flex-shrink: 0;
+  }
+  .aud-card.recommended .aud-icon {
+    background: rgba(255,255,255,0.15); color: #fff;
+  }
   .aud-title { font-size: 24px; font-weight: 700; letter-spacing: -0.02em; margin-top: auto; line-height: 1.2; }
   .aud-sub { font-size: 13px; color: var(--ink-3); margin-top: 6px; font-family: var(--mono); }
 
@@ -1184,17 +1193,32 @@
       <div class="aud-grid reveal" style="margin-top: 40px;">
         <div class="aud-card">
           <div class="aud-num">CASE · 01</div>
+          <div class="aud-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"/><line x1="4" y1="22" x2="4" y2="15"/>
+            </svg>
+          </div>
           <div class="aud-title">트레이너 / 관리자 출신</div>
           <div class="aud-sub">센터, 호텔 등 시설 운영 경험자</div>
         </div>
         <div class="aud-card recommended">
           <span class="recommend-flag">강력 추천</span>
           <div class="aud-num">CASE · 02</div>
+          <div class="aud-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5L6 9H3a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h3l5 4V5z"/><path d="M15.54 8.46a5 5 0 0 1 0 7.07"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+            </svg>
+          </div>
           <div class="aud-title">강사 출신</div>
           <div class="aud-sub">GX, 기구 필라테스 등</div>
         </div>
         <div class="aud-card">
           <div class="aud-num">CASE · 03</div>
+          <div class="aud-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3z"/><path d="M3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/>
+            </svg>
+          </div>
           <div class="aud-title">서비스 업종 경험자</div>
           <div class="aud-sub">CS 업무 등 고객 응대 경험</div>
         </div>
