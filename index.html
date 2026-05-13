@@ -439,8 +439,8 @@
     opacity: 0.4; pointer-events: none;
   }
   .mission-label { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: color-mix(in oklab, var(--bg) 70%, transparent); }
-  .mission-text { font-size: clamp(20px, 2vw, 26px); line-height: 1.4; letter-spacing: -0.015em; font-weight: 500; text-wrap: balance; position: relative; z-index: 1; }
-  .mission-text b { color: var(--sun); background: color-mix(in oklab, var(--sun) 18%, transparent); padding: 2px 8px; border-radius: 6px; font-weight: 600; }
+  .mission-text { font-size: clamp(20px, 2vw, 26px); line-height: 1.5; letter-spacing: -0.015em; font-weight: 500; text-wrap: pretty; word-break: keep-all; overflow-wrap: break-word; position: relative; z-index: 1; }
+  .mission-text b { color: var(--sun); background: color-mix(in oklab, var(--sun) 18%, transparent); padding: 2px 8px; border-radius: 6px; font-weight: 600; display: inline; white-space: nowrap; }
 
   /* === Curriculum table === */
   .curr-head {
@@ -854,6 +854,7 @@
     .goal-row { grid-template-columns: 1fr; gap: 12px; }
     .goal-sub { border-left: 0; padding-left: 0; border-top: 1px solid var(--line-2); padding-top: 12px; }
     .mission-box { grid-template-columns: 1fr; padding: 28px; }
+    .mission-text { font-size: clamp(16px, 4.5vw, 20px); }
     .curr-head, .curr-row { grid-template-columns: 100px 110px 1fr; gap: 12px; }
     .nav { display: none; }
     .info-list li { grid-template-columns: 1fr; gap: 4px; }
